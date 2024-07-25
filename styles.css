@@ -1,0 +1,223 @@
+.pizza{
+    border: 1px solid;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5eb5e0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #d3e449;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.Shopname {
+    background: #0082e0;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1, h2, h3, h5 {
+    margin: 0;
+    padding: 10px 0;
+    color: #000;
+}
+
+
+.cart {
+    background: #d3e449;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.cart th, .cart td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart th {
+    background-color: #0082e0;
+    color: white;
+}
+
+/* Pizza Section */
+.pizzas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: #5eb5e0;
+    padding: 20px;
+}
+
+.pizza {
+    background: #ff5733;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1 1 calc(30% - 40px);
+    margin: 10px;
+    color: #fff;
+}
+
+.pizza img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pizza h5 {
+    color: #fff;
+    margin: 10px 0;
+}
+
+.pizza span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.pizza strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.btn-container {
+    margin-top: 10px;
+}
+
+.btn {
+    background: #e04e28;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ff5733;
+}
+
+.order-history {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.order-history button {
+    background: #e04e28;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.order-history button:hover {
+    background: #ff5733;
+}
+
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+
+.message {
+    color: green;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    background: #e04e28;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff5733;
+}
+
+
+@media (max-width: 1200px) {
+    .pizza {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .pizza {
+        flex: 1 1 100%;
+    }
+
+    .cart table, .cart th, .cart td {
+        font-size: 0.9em;
+    }
+    
+    .cart th, .cart td {
+        padding: 8px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .pizza {
+        flex: 1 1 100%;
+    }
+
+    .cart table, .cart th, .cart td {
+        font-size: 0.8em;
+    }
+    
+    .cart th, .cart td {
+        padding: 6px;
+    }
+
+    .btn {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+}
