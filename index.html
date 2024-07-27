@@ -77,7 +77,7 @@
                 <img src="Pictures/pizza-51.png" alt="Pizza png">
                 <h5 x-text="pizza.flavour"></h5>
                 <span x-text="pizza.size"></span>
-                <strong>R <span x-text="pizza.price"></span></strong>
+               <p><span x-text=" 'R' + pizza.price"></span></p>
                 <div class="btn-container">
                     <button class="btn" x-on:click="addPizzaToCart(pizza.id)">Add to cart</button>
                 </div>

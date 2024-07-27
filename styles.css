@@ -1,12 +1,9 @@
-.pizza{
-    border: 1px solid;
-    margin-bottom: 1em;
-    padding: 1em;
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #5eb5e0;
@@ -22,8 +19,7 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-
-.Shopname {
+.shopname {
     background: #0082e0;
     color: #fff;
     padding: 20px 0;
@@ -35,7 +31,6 @@ h1, h2, h3, h5 {
     padding: 10px 0;
     color: #000;
 }
-
 
 .cart {
     background: #d3e449;
@@ -71,6 +66,7 @@ h1, h2, h3, h5 {
 }
 
 .pizza {
+    border: 1px solid;
     background: #ff5733;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -90,12 +86,7 @@ h1, h2, h3, h5 {
     margin: 10px 0;
 }
 
-.pizza span {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.pizza strong {
+.pizza span, .pizza strong {
     display: block;
     margin-bottom: 10px;
     font-size: 1.2em;
@@ -139,7 +130,6 @@ h1, h2, h3, h5 {
     background: #ff5733;
 }
 
-
 .footer {
     background: #333;
     color: #fff;
@@ -152,7 +142,6 @@ h1, h2, h3, h5 {
 .footer p {
     margin: 5px 0;
 }
-
 
 .message {
     color: green;
@@ -177,7 +166,7 @@ button:hover {
     background: #ff5733;
 }
 
-
+/* Responsive styles */
 @media (max-width: 1200px) {
     .pizza {
         flex: 1 1 calc(50% - 40px);
@@ -192,7 +181,7 @@ button:hover {
     .cart table, .cart th, .cart td {
         font-size: 0.9em;
     }
-    
+
     .cart th, .cart td {
         padding: 8px;
     }
@@ -211,7 +200,7 @@ button:hover {
     .cart table, .cart th, .cart td {
         font-size: 0.8em;
     }
-    
+
     .cart th, .cart td {
         padding: 6px;
     }
